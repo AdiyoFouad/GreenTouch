@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,5 +11,83 @@
       type="image/x-icon"
     />
   </head>
-  <body></body>
+  <body>
+    <!-- Background -->
+    <img
+      src="src/assets/img/background.png"
+      class="absolute h-screen w-full object-cover -z-20"
+      alt="background"
+    />
+    <!-- Menu -->
+    <header>
+      <div class="top-6 fixed w-2/3 left-1/2 -translate-x-1/2 max-w-3xl">
+        <nav
+          class="flex justify-between p-2 items-center rounded-full bg-white/25 backdrop-blur-sm border border-white/40 shadow-lg"
+        >
+          <a href=""
+            ><img
+              src="src/assets/img/logo/GreenTouch.png"
+              alt="GreenTouch"
+              class="w-30 grayscale-100 hover:grayscale-0 duration-200 hover:-translate-y-1"
+          /></a>
+          <ul class="flex gap-5 text-white mr-4">
+            <li>
+              <a
+                href="#services"
+                class="text-green-500 hover:font-bold hover:text-white hover:bg-amber-800 hover:py-1 hover:px-2 hover:rounded-full duration-200"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#realisations"
+                class="text-green-500 hover:font-bold hover:text-white hover:bg-amber-800 hover:py-1 hover:px-2 hover:rounded-full duration-200"
+                >Réalisations</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="text-green-500 hover:font-bold hover:text-white hover:bg-amber-800 hover:py-1 hover:px-2 hover:rounded-full duration-200"
+                >À propos</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="text-green-500 hover:font-bold hover:text-white hover:bg-amber-800 hover:py-1 hover:px-2 hover:rounded-full duration-200"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section
+      class="h-screen flex flex-col justify-center items-center bg-black/70"
+    >
+      <img
+        src="src/assets/img/logo/GreenTouch-.png"
+        alt="GreenTouch"
+        class="w-xl"
+      />
+      <h2 class="text-5xl font-bold text-amber-900 mb-6 opacity-90">
+        Donnez vie à vos espaces verts.
+      </h2>
+      <p class="text-white/70 text-lg mb-10">
+        Aménagements, entretient et création pour des jardins qui vous
+        ressemble.
+      </p>
+      <a href="#contact">
+        <button
+          class="bg-green-600 text-white font-bold rounded-2xl py-3 px-5 cursor-pointer hover:bg-amber-900 hover:-translate-y-2 duration-200"
+        >
+          Demander un devis
+        </button></a
+      >
+    </section>
+
+  </body>
 </html>
