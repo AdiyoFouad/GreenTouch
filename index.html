@@ -20,7 +20,9 @@
     />
     <!-- Menu -->
     <header>
-      <div class="top-6 fixed w-2/3 left-1/2 -translate-x-1/2 max-w-3xl z-40">
+      <div
+        class="top-6 hidden md:block fixed w-2/3 left-1/2 -translate-x-1/2 max-w-3xl z-40"
+      >
         <nav
           class="flex justify-between p-2 items-center rounded-full bg-white/25 backdrop-blur-sm border border-white/40 shadow-lg"
         >
@@ -49,7 +51,7 @@
               <a
                 href="#reviews"
                 class="text-green-500 hover:font-bold hover:text-white hover:bg-amber-800 hover:py-1 hover:px-2 hover:rounded-full duration-200"
-                >Reviews</a
+                >Avis Client</a
               >
             </li>
             <li>
@@ -71,19 +73,19 @@
       </div>
     </header>
 
-    <!-- Presentation -->
+    <!-- Hero -->
     <section
-      class="h-screen flex flex-col justify-center items-center bg-black/70"
+      class="h-screen flex flex-col justify-center items-center bg-black/70 text-center px-5"
     >
       <img
         src="src/assets/img/logo/GreenTouch-.png"
         alt="GreenTouch"
         class="w-xl"
       />
-      <h2 class="text-5xl font-bold text-amber-900 mb-6 opacity-90">
+      <h2 class="text-4xl md:text-5xl font-bold text-amber-900 mb-6 opacity-90">
         Donnez vie à vos espaces verts.
       </h2>
-      <p class="text-white/70 text-lg mb-10">
+      <p class="text-white/70 md:text-lg mb-10">
         Aménagements, entretient et création pour des jardins qui vous
         ressemble.
       </p>
@@ -97,7 +99,7 @@
     </section>
 
     <!-- Services -->
-    <section id="services" class="py-16 px-6 bg-gray-100">
+    <section id="services" class="py-16 px-6 bg-gray-200 md:bg-gray-100">
       <div class="max-w-6xl mx-auto text-center">
         <h3 class="text-3xl font-bold mb-8">Nos Services</h3>
         <div class="grid md:grid-cols-3 gap-8">
@@ -159,7 +161,10 @@
         <h3 class="text-3xl font-bold mb-8">Nos Réalisations</h3>
 
         <div class="carousel rounded-box w-full md:w-2/3 space-x-4 p-4">
-          <div id="item1" class="relative hover:-translate-y-1 hover:shadow-lg carousel-item">
+          <div
+            id="item1"
+            class="relative hover:-translate-y-1 hover:shadow-lg carousel-item"
+          >
             <img
               src="src/assets/img/realisations/realisation_1_a.png"
               alt=""
@@ -171,7 +176,10 @@
               class="h-80 rounded-xl opacity-100 hover:opacity-0 duration-300 active:opacity-100"
             />
           </div>
-          <div id="item2" class="relative hover:-translate-y-1 hover:shadow-lg carousel-item">
+          <div
+            id="item2"
+            class="relative hover:-translate-y-1 hover:shadow-lg carousel-item"
+          >
             <img
               src="src/assets/img/realisations/realisation_2_a.png"
               alt=""
@@ -183,7 +191,10 @@
               class="h-80 rounded-xl opacity-100 hover:opacity-0 duration-300 active:opacity-100"
             />
           </div>
-          <div id="item3" class="relative hover:-translate-y-1 hover:shadow-lg carousel-item">
+          <div
+            id="item3"
+            class="relative hover:-translate-y-1 hover:shadow-lg carousel-item"
+          >
             <img
               src="src/assets/img/realisations/realisation_3_a.png"
               alt=""
@@ -195,7 +206,10 @@
               class="h-80 rounded-xl opacity-100 hover:opacity-0 duration-300 active:opacity-100"
             />
           </div>
-          <div id="item4" class="relative hover:-translate-y-1 hover:shadow-lg carousel-item">
+          <div
+            id="item4"
+            class="relative hover:-translate-y-1 hover:shadow-lg carousel-item"
+          >
             <img
               src="src/assets/img/realisations/realisation_4_a.png"
               alt=""
@@ -207,7 +221,10 @@
               class="h-80 rounded-xl opacity-100 hover:opacity-0 duration-300 active:opacity-100"
             />
           </div>
-          <div id="item5" class="relative hover:-translate-y-1 hover:shadow-lg carousel-item">
+          <div
+            id="item5"
+            class="relative hover:-translate-y-1 hover:shadow-lg carousel-item"
+          >
             <img
               src="src/assets/img/realisations/realisation_5_a.png"
               alt=""
@@ -231,8 +248,257 @@
       </div>
     </section>
 
+    <!-- Review -->
+    <section
+      id="reviews"
+      class="bg-cover"
+      style="background-image: url(src/assets/img/background2.png)"
+    >
+      <div class="bg-green-600/60 py-16 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h3 class="text-3xl font-bold mb-5 text-white">
+            Ce que nos clients disent
+          </h3>
+          <div class="carousel mt-5">
+            <div
+              id="review1"
+              class="carousel-item relative flex flex-col justify-center items-center w-full"
+            >
+              <img
+                src="src/assets/img/profil/profil_1.png"
+                alt=""
+                class="h-25 w-25 object-cover object-center rounded-full mb-2"
+              />
+              <p class="font-semibold mb-3 text-white text-xl">Sophie Martin</p>
+              <p class="text-gray-200 w-5/6 mb-4">
+                Excellent service ! L'équipe est très professionnelle et
+                réactive. Je recommande vivement.
+              </p>
+              <div class="flex text-yellow-400 text-2xl">★★★★★</div>
 
-    
+              <div
+                class="absolute left-2 right-2 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <a href="#review3" class="btn btn-circle">❮</a>
+                <a href="#review2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+
+            <div
+              id="review2"
+              class="carousel-item relative flex flex-col justify-center items-center w-full"
+            >
+              <img
+                src="src/assets/img/profil/profil_2.png"
+                alt=""
+                class="h-25 w-25 object-cover object-center rounded-full mb-2"
+              />
+              <p class="font-semibold mb-3 text-white text-xl">Julien Dubois</p>
+              <p class="text-gray-200 w-5/6 mb-4">
+                Très bon rapport qualité/prix. Quelques petits détails à
+                améliorer, mais globalement satisfait.
+              </p>
+              <div class="flex text-yellow-400 text-2xl">★★★★☆</div>
+
+              <div
+                class="absolute left-2 right-2 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <a href="#review1" class="btn btn-circle">❮</a>
+                <a href="#review3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+
+            <div
+              id="review3"
+              class="carousel-item relative flex flex-col justify-center items-center w-full"
+            >
+              <img
+                src="src/assets/img/profil/profil_3.png"
+                alt=""
+                class="h-25 w-25 object-cover object-center rounded-full mb-2"
+              />
+              <p class="font-semibold mb-3 text-white text-xl">Sophie Martin</p>
+              <p class="text-gray-200 w-5/6 mb-4">
+                Excellent service ! L'équipe est très professionnelle et
+                réactive. Je recommande vivement.
+              </p>
+              <div class="flex text-yellow-400 text-2xl">★★★★★</div>
+
+              <div
+                class="absolute left-2 right-2 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <a href="#review2" class="btn btn-circle">❮</a>
+                <a href="#review1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-16 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-3xl font-bold mb-10">À propos de nous</h3>
+        <div class="flex gap-10">
+          <div class="md:w-2/3">
+            <ul
+              class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"
+            >
+              <!-- Notre Histoire -->
+              <li>
+                <div class="timeline-middle text-amber-900">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="h-5 w-5"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div class="timeline-start mb-3 md:text-end">
+                  <div class="text-lg font-black text-amber-900">
+                    Notre histoire
+                  </div>
+                  <p class="text-sm">
+                    <span class="text-lg text-green-600 font-bold"
+                      >GreenTouch</span
+                    >, fondée par des passionnés de nature et de design, crée
+                    depuis plus de dix ans des espaces verts esthétiques,
+                    durables et faciles à entretenir pour particuliers et
+                    entreprises. Alliant techniques modernes et savoir-faire
+                    traditionnel, nous concevons des lieux uniques et
+                    fonctionnels, adaptés à chaque environnement.
+                  </p>
+                </div>
+                <hr />
+              </li>
+
+              <!-- Nos Valeurs -->
+              <li>
+                <div class="timeline-middle text-amber-900">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="h-5 w-5"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div class="timeline-end mb-3">
+                  <div class="text-lg font-black text-amber-900">
+                    Nos valeurs
+                  </div>
+                  <p class="text-sm">
+                    Chez
+                    <span class="text-lg text-green-600 font-bold"
+                      >GreenTouch</span
+                    >, chaque projet est conçu sur mesure, guidé par
+                    <span class="font-bold">l'écoute</span>, la
+                    <span class="font-bold">qualité</span> et le
+                    <span class="font-bold">respect de l'environnement</span>.
+                    De l'entretien au projet complet, nous allions vos besoins à
+                    des
+                    <span class="font-bold"
+                      >solutions durables et écologiques</span
+                    >
+                    pour créer des espaces qui vous ressemblent.
+                  </p>
+                </div>
+                <hr />
+              </li>
+
+              <!-- Notre engagement -->
+              <li>
+                <div class="timeline-middle text-amber-900">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="h-5 w-5"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div class="timeline-start mb-3 md:text-end">
+                  <div class="text-lg font-black text-amber-900">
+                    Notre engagement
+                  </div>
+                  <p class="text-sm">
+                    Nous croyons que chaque espace extérieur doit devenir un
+                    lieu de bien-être, c'est pourquoi nous mettons rigueur,
+                    créativité et passion au service de votre projet. En vous
+                    accompagnant de la conception à l'entretien,
+                    <span class="text-lg text-green-600 font-bold"
+                      >GreenTouch</span
+                    >
+                    crée des jardins uniques qui subliment votre cadre de vie et
+                    valorisent votre patrimoine.
+                  </p>
+                </div>
+                <hr />
+              </li>
+            </ul>
+          </div>
+          <div class="w-1/2 hidden md:block relative">
+            <img
+              src="src/assets/img/about.png"
+              alt="Amenagement terrasse"
+              class="rounded-r-4xl h-auto sticky top-2"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 px-6 bg-amber-900/10">
+      <div class="max-w-4xl mx-auto text-center">
+        <h3 class="text-3xl font-bold mb-6">Contactez-nous</h3>
+        <div>
+          <div class="bg-white p-10">
+            <form class="grid gap-4 max-w-md mx-auto">
+              <input
+                type="text"
+                placeholder="Nom"
+                class="p-3 rounded-md border border-gray-300"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                class="p-3 rounded-md border border-gray-300"
+              />
+              <textarea
+                placeholder="Votre message"
+                class="p-3 rounded-md border border-gray-300"
+              ></textarea>
+              <button
+                type="reset"
+                class="bg-green-500 text-white py-3 rounded-md cursor-pointer hover:bg-amber-900 duration-200"
+              >
+                Envoyer
+              </button>
+            </form>
+            <p class="mt-6">📍 Cotonou, Bénin | 📞 99 99 99 99</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-green-600 text-white py-4 text-center">
       <p>&copy; 2025 GreenTouch - Tous droits réservés</p>
