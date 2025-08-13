@@ -20,7 +20,7 @@
     />
     <!-- Menu -->
     <header>
-      <div class="top-6 fixed w-2/3 left-1/2 -translate-x-1/2 max-w-3xl">
+      <div class="top-6 fixed w-2/3 left-1/2 -translate-x-1/2 max-w-3xl z-40">
         <nav
           class="flex justify-between p-2 items-center rounded-full bg-white/25 backdrop-blur-sm border border-white/40 shadow-lg"
         >
@@ -43,6 +43,13 @@
                 href="#realisations"
                 class="text-green-500 hover:font-bold hover:text-white hover:bg-amber-800 hover:py-1 hover:px-2 hover:rounded-full duration-200"
                 >Réalisations</a
+              >
+            </li>
+            <li>
+              <a
+                href="#reviews"
+                class="text-green-500 hover:font-bold hover:text-white hover:bg-amber-800 hover:py-1 hover:px-2 hover:rounded-full duration-200"
+                >Reviews</a
               >
             </li>
             <li>
@@ -90,19 +97,21 @@
     </section>
 
     <!-- Services -->
-    <section id="services" class="py-16 px-6 bg-gray-50">
+    <section id="services" class="py-16 px-6 bg-gray-100">
       <div class="max-w-6xl mx-auto text-center">
-        <h3 class="text-3xl font-bold mb-8 ">Nos Services</h3>
+        <h3 class="text-3xl font-bold mb-8">Nos Services</h3>
         <div class="grid md:grid-cols-3 gap-8">
           <div
             class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
           >
             <img
-              src="src/assets/img/service1.png"
+              src="src/assets/img/services/service1.png"
               alt="Entretien"
               class="rounded-md mb-4 h-50 w-80"
             />
-            <h4 class="font-semibold text-lg mb-2 text-amber-900">Entretien de jardin</h4>
+            <h4 class="font-semibold text-lg mb-2 text-amber-900">
+              Entretien de jardin
+            </h4>
             <hr />
             <p class="mt-2">
               Tonte, taille, arrosage et soins adaptés pour vos plantes.
@@ -112,11 +121,13 @@
             class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
           >
             <img
-              src="src/assets/img/service2.png"
+              src="src/assets/img/services/service2.png"
               alt="Aménagement"
               class="rounded-md mb-4 h-50 w-80"
             />
-            <h4 class="font-semibold text-lg mb-2 text-amber-900">Aménagement paysager</h4>
+            <h4 class="font-semibold text-lg mb-2 text-amber-900">
+              Aménagement paysager
+            </h4>
             <hr />
             <p class="mt-2">
               Création d'allées, terrasses et espaces verts harmonieux.
@@ -126,11 +137,13 @@
             class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
           >
             <img
-              src="src/assets/img/service3.png"
+              src="src/assets/img/services/service3.png"
               alt="Plantation"
               class="rounded-md mb-4 h-50 w-80"
             />
-            <h4 class="font-semibold text-lg mb-2 text-amber-900">Plantation</h4>
+            <h4 class="font-semibold text-lg mb-2 text-amber-900">
+              Plantation
+            </h4>
             <hr />
             <p class="mt-2">
               Fleurs, arbustes, arbres fruitiers : pour un jardin vivant.
@@ -139,5 +152,86 @@
         </div>
       </div>
     </section>
+
+    <!-- Realisations -->
+    <section id="realisations" class="py-16 px-6">
+      <div class="max-w-6xl mx-auto text-center">
+        <h3 class="text-3xl font-bold mb-8">Nos Réalisations</h3>
+
+        <div class="carousel rounded-box w-full md:w-2/3 space-x-4 p-4">
+          <div id="item1" class="relative hover:-translate-y-1 hover:shadow-lg carousel-item">
+            <img
+              src="src/assets/img/realisations/realisation_1_a.png"
+              alt=""
+              class="h-80 rounded-xl absolute opacity-0 hover:opacity-100 duration-300 active:opacity-100"
+            />
+            <img
+              src="src/assets/img/realisations/realisation_1_b.png"
+              alt=""
+              class="h-80 rounded-xl opacity-100 hover:opacity-0 duration-300 active:opacity-100"
+            />
+          </div>
+          <div id="item2" class="relative hover:-translate-y-1 hover:shadow-lg carousel-item">
+            <img
+              src="src/assets/img/realisations/realisation_2_a.png"
+              alt=""
+              class="h-80 rounded-xl absolute opacity-0 hover:opacity-100 duration-300 active:opacity-100"
+            />
+            <img
+              src="src/assets/img/realisations/realisation_2_b.png"
+              alt=""
+              class="h-80 rounded-xl opacity-100 hover:opacity-0 duration-300 active:opacity-100"
+            />
+          </div>
+          <div id="item3" class="relative hover:-translate-y-1 hover:shadow-lg carousel-item">
+            <img
+              src="src/assets/img/realisations/realisation_3_a.png"
+              alt=""
+              class="h-80 rounded-xl absolute opacity-0 hover:opacity-100 duration-300 active:opacity-100"
+            />
+            <img
+              src="src/assets/img/realisations/realisation_3_b.png"
+              alt=""
+              class="h-80 rounded-xl opacity-100 hover:opacity-0 duration-300 active:opacity-100"
+            />
+          </div>
+          <div id="item4" class="relative hover:-translate-y-1 hover:shadow-lg carousel-item">
+            <img
+              src="src/assets/img/realisations/realisation_4_a.png"
+              alt=""
+              class="h-80 rounded-xl absolute opacity-0 hover:opacity-100 duration-300 active:opacity-100"
+            />
+            <img
+              src="src/assets/img/realisations/realisation_4_b.png"
+              alt=""
+              class="h-80 rounded-xl opacity-100 hover:opacity-0 duration-300 active:opacity-100"
+            />
+          </div>
+          <div id="item5" class="relative hover:-translate-y-1 hover:shadow-lg carousel-item">
+            <img
+              src="src/assets/img/realisations/realisation_5_a.png"
+              alt=""
+              class="h-80 rounded-xl absolute opacity-0 hover:opacity-100 duration-300 active:opacity-100"
+            />
+            <img
+              src="src/assets/img/realisations/realisation_5_b.png"
+              alt=""
+              class="h-80 rounded-xl opacity-100 hover:opacity-0 duration-300 active:opacity-100"
+            />
+          </div>
+        </div>
+
+        <div class="flex w-full justify-center gap-2 py-2 md:hidden">
+          <a href="#item1" class="btn btn-xs">1</a>
+          <a href="#item2" class="btn btn-xs">2</a>
+          <a href="#item3" class="btn btn-xs">3</a>
+          <a href="#item4" class="btn btn-xs">4</a>
+          <a href="#item5" class="btn btn-xs">5</a>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="src/js/main.js"></script>
   </body>
 </html>
