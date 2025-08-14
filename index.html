@@ -10,6 +10,7 @@
       href="src/assets/img/logo/favicon.png"
       type="image/x-icon"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Background -->
@@ -75,8 +76,8 @@
 
       <!-- Menu 2 -->
 
-      <div class="fixed z-50 navbar bg-base-100 shadow-sm md:hidden">
-        <div class="flex-1">
+      <div class="fixed z-50 navbar bg-base-100 shadow-sm md:hidden justify-between">
+        <div>
           <a href=""
             ><img
               src="src/assets/img/logo/GreenTouch.png"
@@ -84,7 +85,7 @@
               class="w-30"
           /></a>
         </div>
-        <div class="flex-none">
+        <div>
           <div class="drawer drawer-end">
             <input id="my-drawer" type="checkbox" class="drawer-toggle" />
             <div class="drawer-content">
@@ -154,12 +155,15 @@
 
     <!-- Hero -->
     <section
-      class="h-screen flex flex-col justify-center items-center bg-black/70 text-center px-5"
+      class="h-screen flex flex-col justify-center items-center bg-black/70 text-center px-5 overflow-hidden"
     >
       <img
         src="src/assets/img/logo/GreenTouch-.png"
         alt="GreenTouch"
         class="w-xl"
+        data-aos="zoom-out-down"
+        data-aos-duration="1500"
+        data-aos-easing="linear"
       />
       <h2 class="text-4xl md:text-5xl font-bold text-amber-900 mb-6 opacity-90">
         Donnez vie à vos espaces verts.
@@ -168,7 +172,8 @@
         Aménagements, entretient et création pour des jardins qui vous
         ressemble.
       </p>
-      <a href="#contact">
+      <a href="#contact" data-aos="fade-up" 
+        data-aos-duration="1000" data-aos-delay="500" data-aos-easing="linear">
         <button
           class="bg-green-600 text-white font-bold rounded-2xl py-3 px-5 cursor-pointer hover:bg-amber-900 hover:-translate-y-2 duration-200"
         >
@@ -179,11 +184,20 @@
 
     <!-- Services -->
     <section id="services" class="py-16 px-6 bg-gray-200 md:bg-gray-100">
-      <div class="max-w-6xl mx-auto text-center">
-        <h3 class="text-3xl font-bold mb-8">Nos Services</h3>
+      <div class="max-w-6xl mx-auto text-center overflow-hidden">
+        <h3
+          class="text-3xl font-bold mb-8"
+          data-aos="zoom-out-down"
+          data-aos-duration="1000"
+        >
+          Nos Services
+        </h3>
         <div class="grid md:grid-cols-3 gap-8">
           <div
             class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
+            data-aos="flip-left"
+            data-aos-duration="600"
+            data-aos-delay="200"
           >
             <img
               src="src/assets/img/services/service1.png"
@@ -200,6 +214,9 @@
           </div>
           <div
             class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
+            data-aos="flip-right"
+            data-aos-duration="800"
+            data-aos-delay="200"
           >
             <img
               src="src/assets/img/services/service2.png"
@@ -216,6 +233,9 @@
           </div>
           <div
             class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-delay="200"
           >
             <img
               src="src/assets/img/services/service3.png"
@@ -235,11 +255,35 @@
     </section>
 
     <!-- Realisations -->
-    <section id="realisations" class="py-16 px-6">
-      <div class="max-w-6xl mx-auto text-center">
-        <h3 class="text-3xl font-bold mb-8">Nos Réalisations</h3>
-
-        <div class="carousel rounded-box w-full md:w-2/3 space-x-4 p-4">
+    <section id="realisations" class="relative py-16 px-6 overflow-hidden" >
+      <img
+        src="src/assets/img/tondeuse.png"
+        class="hidden md:block absolute bottom-0 h-70"
+        alt="tondeuse"
+        data-aos="fade-down-right"
+        ata-aos-duration="1000"
+        data-aos-easing="linear"
+      />
+      <img
+        src="src/assets/img/rateau.png"
+        class="hidden md:block absolute top-5 right-0 h-50"
+        alt="rateau"
+        data-aos="fade-up-left"
+        ata-aos-duration="1000"
+        data-aos-easing="linear"
+        data-aos-delay="200"
+      />
+      <div class="max-w-6xl mx-auto text-center overflow-x-hidden">
+        <h3
+          class="text-3xl font-bold mb-8"
+          data-aos="zoom-out-down"
+          data-aos-duration="1000"
+        >
+          Nos Réalisations
+        </h3>
+        <div
+          class="carousel bg-amber-600/20 rounded-box w-full md:w-2/3 space-x-4 p-4"
+        >
           <div
             id="item1"
             class="relative hover:-translate-y-1 hover:shadow-lg carousel-item"
@@ -334,8 +378,12 @@
       style="background-image: url(src/assets/img/background2.png)"
     >
       <div class="bg-green-600/60 py-16 px-6">
-        <div class="max-w-4xl mx-auto text-center">
-          <h3 class="text-3xl font-bold mb-5 text-white">
+        <div class="max-w-4xl mx-auto text-center overflow-x-hidden">
+          <h3
+            class="text-3xl font-bold mb-5 text-white"
+            data-aos="zoom-out-down"
+            data-aos-duration="1000"
+          >
             Ce que nos clients disent
           </h3>
           <div class="carousel mt-5">
@@ -417,15 +465,26 @@
 
     <!-- About -->
     <section id="about" class="py-16 px-6">
-      <div class="max-w-4xl mx-auto">
-        <h3 class="text-3xl font-bold mb-10">À propos de nous</h3>
-        <div class="flex gap-10">
+      <div class="max-w-4xl mx-auto overflow-hidden">
+        <h3
+          class="text-3xl font-bold mb-10"
+          data-aos="zoom-out-down"
+          data-aos-duration="1000"
+        >
+          À propos de nous
+        </h3>
+        <div class="flex gap-10 items-center">
           <div class="md:w-2/3">
             <ul
               class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"
             >
               <!-- Notre Histoire -->
-              <li>
+              <li
+                data-aos="fade-right"
+                ata-aos-duration="1000"
+                data-aos-easing="linear"
+                data-aos-delay="100"
+              >
                 <div class="timeline-middle text-amber-900">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -459,7 +518,12 @@
               </li>
 
               <!-- Nos Valeurs -->
-              <li>
+              <li
+                data-aos="fade-left"
+                ata-aos-duration="1000"
+                data-aos-easing="linear"
+                data-aos-delay="100"
+              >
                 <div class="timeline-middle text-amber-900">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -498,7 +562,12 @@
               </li>
 
               <!-- Notre engagement -->
-              <li>
+              <li
+                data-aos="fade-right"
+                ata-aos-duration="1000"
+                data-aos-easing="linear"
+                data-aos-delay="100"
+              >
                 <div class="timeline-middle text-amber-900">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -537,7 +606,7 @@
             <img
               src="src/assets/img/about.png"
               alt="Amenagement terrasse"
-              class="rounded-r-4xl h-auto sticky top-2"
+              class="rounded-r-4xl m-auto h-auto sticky top-2"
             />
           </div>
         </div>
@@ -546,8 +615,14 @@
 
     <!-- Contact -->
     <section id="contact" class="py-16 px-6 bg-amber-900/10">
-      <div class="max-w-4xl mx-auto text-center">
-        <h3 class="text-3xl font-bold mb-6">Contactez-nous</h3>
+      <div class="max-w-4xl mx-auto text-center overflow-hidden">
+        <h3
+          class="text-3xl font-bold mb-6"
+          data-aos="zoom-out-down"
+          data-aos-duration="1000"
+        >
+          Contactez-nous
+        </h3>
         <div>
           <div class="bg-white p-10">
             <form class="grid gap-4 max-w-md mx-auto">
@@ -555,19 +630,32 @@
                 type="text"
                 placeholder="Nom"
                 class="p-3 rounded-md border border-gray-300"
+                data-aos="fade-up"
+                ata-aos-duration="500"
+                data-aos-delay="100"
               />
               <input
                 type="email"
                 placeholder="Email"
                 class="p-3 rounded-md border border-gray-300"
+                data-aos="fade-up"
+                ata-aos-duration="500"
+                data-aos-delay="100"
               />
               <textarea
                 placeholder="Votre message"
                 class="p-3 rounded-md border border-gray-300"
+                data-aos="fade-up"
+                ata-aos-duration="500"
+                data-aos-delay="100"
               ></textarea>
               <button
                 type="reset"
                 class="bg-green-500 text-white py-3 rounded-md cursor-pointer hover:bg-amber-900 duration-200"
+                data-aos="fade-up"
+                ata-aos-duration="1000"
+                data-aos-easing="linear"
+                data-aos-delay="100"
               >
                 Envoyer
               </button>
@@ -583,6 +671,7 @@
       <p>&copy; 2025 GreenTouch - Tous droits réservés</p>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="src/js/main.js"></script>
   </body>
 </html>
